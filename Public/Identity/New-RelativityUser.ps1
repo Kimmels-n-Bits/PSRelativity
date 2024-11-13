@@ -55,9 +55,10 @@ function New-RelativityUser
             Gets or sets an ARRAY of IP address or addresses that are valid locations from which the user can log in from.
         .PARAMETER TypeID
             Gets or sets the user's typeID. Type is for reference purposes only and has no impact on access or billing.
+            Relativity sets this to 663 Internal, by default.
 
         .EXAMPLE
-            New-RelativityUser -Verbose `
+            New-RelativityUser `
                 -FName "joe" `
                 -LName "smith" `
                 -ClientID 1234567 `

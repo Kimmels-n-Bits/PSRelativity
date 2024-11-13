@@ -90,14 +90,14 @@ When this option is set to true leave ArchiveDirectory empty.
 ARM will select the fist valid one from configuration.
 
 .EXAMPLE
-New-RelativityArmArchiveJob -WorkspaceId 1234567 -ArchiveDirectory "\\server\path" -IncludeDatabaseBackup
+New-RelativityArmArchiveJob -ArtifactID 1234567 -ArchiveDirectory "\\server\path" -IncludeDatabaseBackup
 
 This example creates a new archive job for workspace with the ArtifactId 1234567 in the specified directory and
 includes a database backup.
 
 .EXAMPLE
 New-RelativityArmArchiveJob `
-    -WorkspaceId 1234567 `
+    -ArtifactID 1234567 `
     -IncludeDatabaseBackup `
     -IncludeRepositoryFiles `
     -UseDefaultArchiveDirectory
